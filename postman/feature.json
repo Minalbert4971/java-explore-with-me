@@ -236,8 +236,8 @@
 									"",
 									"pm.test(\"Есть сообщение об ошибке\", function () {",
 									"    console.log(target)",
-									"    pm.expect(target).to.have.property('message');",
-									"    pm.expect(target.message).to.eql('Subscription already exists');",
+									"    pm.expect(target).to.have.property('description');",
+									"    pm.expect(target.description).to.eql('Subscription already exists');",
 									"});"
 								],
 								"type": "text/javascript",
