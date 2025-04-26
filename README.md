@@ -1,2 +1,2 @@
 # java-explore-with-me
-https://github.com/Minalbert4971/java-explore-with-me/pull/8
+Link to the PR: https://github.com/Minalbert4971/java-explore-with-me/pull/9
