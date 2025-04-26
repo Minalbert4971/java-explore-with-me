@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "fdce1ca1-17bf-4b6e-afb5-00369108b892",
+		"_postman_id": "f4632b62-47d2-40de-bd7a-19aacaba63db",
 		"name": "feature",
 		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
 		"_exporter_id": "38366154"
@@ -900,8 +900,8 @@
 									"const subscriberId = pm.collectionVariables.get('subscriberId');",
 									"",
 									"pm.test(\"Пользователь должен быть найден до выполнения запроса\", function() {",
-									"    pm.expect(createdSubscription.userId).to.eql(userId);",
-									"    pm.expect(createdSubscription.subscriberId).to.eql(subscriberId);",
+									"    pm.expect(createdSubscription.userId).to.eql(Number(userId));",
+									"    pm.expect(createdSubscription.subscriberId).to.eql(Number(subscriberId));",
 									"});",
 									"",
 									"const req = {",
@@ -1606,6 +1606,11 @@
 		}
 	],
 	"variable": [
+		{
+			"key": "baseUrl",
+			"value": "http://localhost:8080",
+			"type": "string"
+		},
 		{
 			"key": "userId",
 			"value": "1",
