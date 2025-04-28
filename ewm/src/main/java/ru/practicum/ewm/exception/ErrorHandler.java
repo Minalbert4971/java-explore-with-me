@@ -38,7 +38,7 @@ public class ErrorHandler {
     @ResponseStatus(HttpStatus.CONFLICT)
     public ErrorResponse handleArgumentException(ValidationException ex) {
         log.debug("Validation error: {}", ex.getMessage());
-        return new ErrorResponse("ERROR", "Wrong argument(s)");
+        return new ErrorResponse("Wrong argument(s)", "Subscription already exists");
     }
 
     @ExceptionHandler({AuthentificationException.class})

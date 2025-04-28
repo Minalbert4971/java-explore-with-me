@@ -30,4 +30,7 @@ public class User {
     @Setter
     private boolean active;
 
+    @Setter
+    private AllowedSubscriberGroup subscriberGroup;
+
 }
